@@ -18,7 +18,7 @@ const Stories = () => {
       {suggestions.map((profile) => (
         <Story
           key={profile?.id}
-          img={profile?.avatar}
+          img={`https://avatars.dicebear.com/api/human/${profile?.id}.svg`}
           username={profile.username}
         />
       ))}
